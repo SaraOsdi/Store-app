@@ -1,0 +1,281 @@
+.right {
+    float: right;
+    width: 200px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+body {
+    color: pink;
+}
+
+.right:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+.cart {
+    float: left;
+    width: 40px;
+
+}
+
+/* Style the search field */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17;
+    border: 1px solid rgb(0, 0, 0);
+    float: left;
+    width: 50%;
+    background: #06450e;
+}
+
+/* Style the submit button */
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #e1530c;
+    color: rgb(11, 10, 10);
+    font-size: 17px;
+    border: 1px solid rgb(16, 12, 12);
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: gold;
+}
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: #f07d19
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.myCanvas {
+    width: 200px;
+    height: 200px;
+    background-color: #f07d19;
+    float: right;
+
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f07d19;
+    color: rgb(197, 28, 28);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.sale {
+
+    background-color: #fafafa;
+    color: rgb(237, 13, 13);
+}
+
+#border {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px 60px;
+    width: 920px;
+    height: 70px;
+    background-position: center;
+    background-size: cover;
+
+
+
+}
+
+.buttons {
+
+    justify-content: space-between;
+    padding: 0 12px;
+    align-items: center;
+
+    border: none;
+    /* Remove borders */
+    color: rgb(18, 17, 17);
+    /* Add a text color */
+    padding: 0 20px;
+    /* Add some padding */
+
+    /* Add a pointer cursor on mouse-over */
+    background-color: #ffffff;
+
+    text-decoration: none;
+    padding: 0 12px;
+    text-decoration: underline;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+header nav a {
+    color: #3e8e41;
+
+}
+
+.buttons:hover {
+    color: palevioletred;
+}
+
+
+
+.right2 {
+    float: right;
+    background-color: pink;
+    color: rgb(252, 252, 252);
+}
+
+#link1 {
+    float: right;
+    color: rgb(0, 0, 0)
+}
+
+#link1:hover {
+    color: pink;
+}
+
+.navbar-toggler {
+    float: right;
+
+}
+
+/* ********************************CustomerService-CSS****************************************************************************************** */
+h1 {
+    background-color:  pink;
+    color: rgb(224, 17, 17);
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+
+
+p {
+    color: rgb(226, 22, 22);
+}
+
+
+.CS {
+    column-count: 2;
+    column-gap: 40px;
+    column-rule-style: solid;
+}
+
+/* ********************************manager-CSS****************************************************************************************** */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(188, 228, 27);
+
+    text-align: center;
+}
+
+form {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ba1f1f;
+    border: 1px solid #a91818;
+    border-radius: 5px;
+    width: 300px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.input-group {
+    margin: 10px 0;
+    text-align: right;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(11, 11, 11);
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#login-button {
+    background-color: #4CAF50;
+    color: rgb(24, 19, 19)faf;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-button:hover {
+    background-color: #3e8e41;
+}
+
+.bg-carosella {
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+h5 {
+    color: palevioletred;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.text-white bg-dark {
+    background-position: center;
+
+}
+
+a {
+    margin: o auto;
+}
+
+.nav-link :hover {
+    color: pink;
+}

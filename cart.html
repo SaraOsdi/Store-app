@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="shopping.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <heder>
+        <a href="http://127.0.0.1:3000/project.html">
+            <img src="https://img.freepik.com/free-vector/beauty-cosmetic-logo-modern-creative-design-vector_53876-143586.jpg"
+                alt="" class="right">
+        </a>
+        <nav>
+            <div id="border" style="position:relative; top:5%;left: 300px;">
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <a href="http://127.0.0.1:3000/perfume.html"><button class="buttons">בשמים</button> </a>
+                <a href="http://127.0.0.1:3000/creams.html"><button class="buttons">טיפוח</button> </a>
+                <a href="http://127.0.0.1:3000/boxes.html"><button class="buttons"> מארזים</button> </a>
+                <a href="http://127.0.0.1:3000/aboutUs.html"><button class="buttons">אודותינו</button> </a>
+                <a href="http://127.0.0.1:3000/customerService.html"><button class="buttons">שירות לקוחות</button> </a>
+                <a href=" http://127.0.0.1:3000/price.html"><button class="buttons">חיפוש לפי מחיר </button> </a>
+                
+            </div>
+        </nav>
+        <br />
+        <br />
+        <br />
+
+        <a href="http://127.0.0.1:3000/cart.html">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgMTkuNWMwIC44MjktLjY3MiAxLjUtMS41IDEuNXMtMS41LS42NzEtMS41LTEuNWMwLS44MjguNjcyLTEuNSAxLjUtMS41czEuNS42NzIgMS41IDEuNXptMy41LTEuNWMtLjgyOCAwLTEuNS42NzEtMS41IDEuNXMuNjcyIDEuNSAxLjUgMS41IDEuNS0uNjcxIDEuNS0xLjVjMC0uODI4LS42NzItMS41LTEuNS0xLjV6bTEuMzM2LTVsMS45NzctN2gtMTYuODEzbDIuOTM4IDdoMTEuODk4em00Ljk2OS0xMGwtMy40MzIgMTJoLTEyLjU5N2wuODM5IDJoMTMuMjM5bDMuNDc0LTEyaDEuOTI5bC43NDMtMmgtNC4xOTV6Ii8+PC9zdmc+"
+                alt="cart" class="cart">
+        </a>
+        <br />
+        <br />
+        <hr />
+    </heder>
+    
+
+    <div id="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cart-contents">
+            <button onclick="generateTable()">הראה סל</button>
+        </div>
+
+   
+    
+    
+   
+
+
+
+    <!-- <script>
+
+let shoppingCart = [];
+
+function addToCart(id, name, price) {
+    let product = {
+        id: id,
+        name: name,
+        price: price
+    };
+
+    shoppingCart.push(product);
+
+    updateCartUI();
+}
+function updateCartUI() {
+            let cartContentsElement = document.getElementById('cart-contents');
+
+            cartContentsElement.innerHTML = '';
+
+            let cartTable = document.createElement('table');
+
+            let headerRow = cartTable.insertRow();
+            headerRow.innerHTML = '<th>Product</th><th>Price</th>';
+
+            for (let product of shoppingCart) {
+                let row = cartTable.insertRow();
+                row.innerHTML = `<td>${product.name}</td><td>${product.price}</td>`;
+            }
+
+        }
+    </script> -->
+
+
+
+
+
+
+
+    <hr />
+    <footer>
+
+
+
+        <h2 class="right2">מידע</h2>
+
+        <br>
+        <br>
+        <a id="link1" href="http://127.0.0.1:3000/project.html">דף הבית</a>
+        <br>
+        <a id="link1" href="http://127.0.0.1:3000/aboutUs.html">אודותינו</a>
+        <br>
+        <a id="link1" href="http://127.0.0.1:3000/customerService.html">שירות לקוחות</a>
+        <br>
+
+        <a id="link1" href="http://127.0.0.1:3000/creams.html">טיפוח</a>
+        <br>
+        <a id="link1" href="http://127.0.0.1:3000/perfume.html">בשמים</a>
+        <br>
+        <a id="link1" href="http://127.0.0.1:3000/boxes.html">מארזים</a>
+        <br>
+
+
+        </div>
+        <br>
+        <br>
+    
+    </footer>
+</body>
+
+</html>

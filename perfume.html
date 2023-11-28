@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="shopping.js"></script>
+</head>
+
+<body>
+    <heder>
+        <a href="http://127.0.0.1:3000/project.html">
+            <img src="https://img.freepik.com/free-vector/beauty-cosmetic-logo-modern-creative-design-vector_53876-143586.jpg"
+                alt="" class="right">
+        </a>
+        <nav>
+            <div id="border" style="position:relative; top:5%;left: 300px;">
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <a href="http://127.0.0.1:3000/perfume.html"><button class="buttons">בשמים</button> </a>
+                <a href="http://127.0.0.1:3000/creams.html"><button class="buttons">טיפוח</button> </a>
+                <a href="http://127.0.0.1:3000/boxes.html"><button class="buttons"> מארזים</button> </a>
+                <a href="http://127.0.0.1:3000/aboutUs.html"><button class="buttons">אודותינו</button> </a>
+                <a href="http://127.0.0.1:3000/customerService.html"><button class="buttons">שירות לקוחות</button> </a>
+                <a href=" http://127.0.0.1:3000/price.html"><button class="buttons">חיפוש לפי מחיר </button> </a>
+
+            </div>
+        </nav>
+        <br />
+        <br />
+        <br />
+
+        <a href="http://127.0.0.1:3000/cart.html">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgMTkuNWMwIC44MjktLjY3MiAxLjUtMS41IDEuNXMtMS41LS42NzEtMS41LTEuNWMwLS44MjguNjcyLTEuNSAxLjUtMS41czEuNS42NzIgMS41IDEuNXptMy41LTEuNWMtLjgyOCAwLTEuNS42NzEtMS41IDEuNXMuNjcyIDEuNSAxLjUgMS41IDEuNS0uNjcxIDEuNS0xLjVjMC0uODI4LS42NzItMS41LTEuNS0xLjV6bTEuMzM2LTVsMS45NzctN2gtMTYuODEzbDIuOTM4IDdoMTEuODk4em00Ljk2OS0xMGwtMy40MzIgMTJoLTEyLjU5N2wuODM5IDJoMTMuMjM5bDMuNDc0LTEyaDEuOTI5bC43NDMtMmgtNC4xOTV6Ii8+PC9zdmc+"
+                alt="cart" class="cart">
+        </a>
+        <br />
+        <br />
+        <hr />
+    </heder>
+
+    <h1 style=" text-align: center; color:white"> : בשמים</h1>
+
+    <div class="container-fluid text-center">
+        <div class="row align-items-sm">
+            <div class="col-12  col-md-4 col-sm-6 col-lg-3 my-3 p-4">
+                <img src="https://cdn.speedsize.com/c96ef425-468a-4628-9088-18d710e20386/https://d3m9l0v76dty0.cloudfront.net/system/photos/10703977/extra_large/d91edbcbca7d04e21222e9d4443def03.jpg"
+                    width="250" height="200" alt="">
+                <h5 class="product">בושם מולקולות לאשה</h5>
+                <h4>₪149</h4>
+
+                <button onclick="updateQuantity('perfume',0, -1)">-</button>
+                <span id="quantity0">0</span>
+                <button onclick="updateQuantity('perfume',0, 1)">+</button>
+
+            </div>
+
+            <div class="col-12 col-md-4 col-sm-6 col-lg-3 my-3 p-4">
+                <img src="https://images.ecom.azrieli.com/_images_/c/4/9/e/c49e495935660895fdfc479bd99a882ea0416c63_351e8e89766c45799e3971fc1359078e.jpg?func=bound&bg_color=white&trim=5&fit_enlarge=1&width=500&height=700"
+                    width="250" height="200" alt="">
+                <h5 class="product">בושם אליאן לאשה </h5>
+                <h4>₪399 </h4>
+
+                <button onclick="updateQuantity('perfume',1, -1)">-</button>
+                <span id="quantity1">0</span>
+                <button onclick="updateQuantity('perfume',1, 1)">+</button>
+            </div>
+
+
+
+
+            <div class="col-12 col-md-4 col-sm-6 col-lg-3  my-3 p-4">
+
+
+                <img src="https://d3m9l0v76dty0.cloudfront.net/system/photos/12898426/large/bfdbb00bb8959e4c1a38393742c0cfee.jpg"
+                    width="250" height="200" alt="">
+
+
+
+
+                <h5 class="product">בושם נשים Coco Mademoiselle L'Eau Privée Chanel א.ד.פ 100 מ”ל שאנל
+                </h5>
+                <h4> ₪599<h4>
+
+
+
+
+                        <button onclick="updateQuantity('perfume',2, -1)">-</button>
+                        <span id="quantity2">0</span>
+                        <button onclick="updateQuantity('perfume',2, 1)">+</button>
+
+            </div>
+
+
+
+            <div class="col-12 col-md-4 col-sm-6 col-lg-3 my-3 p-4">
+
+                <img src="https://www.lancome.co.il/dw/image/v2/AAQP_PRD/on/demandware.static/-/Sites-lac-master-catalog/default/dw84e9f5c8/images/PACKSHOTS/FRAGRANCE/LA_VIE_EST_BELLE/313013_La_Vie_Est_Belle_Eau_De_Parfum/100ml.jpg?sw=500&sh=500&sm=fit"
+                    width="250" height="200" alt="">
+
+
+
+                <h5 class="product">
+                    LA VIE EST BELLE EAU DE PARFUM לה וי אה בל או דה פרפיום
+
+                </h5>
+                <h4>
+                    ₪289
+                </h4>
+
+
+
+
+
+
+                <button onclick="updateQuantity('perfume',3, -1)">-</button>
+                <span id="quantity3">0</span>
+                <button onclick="updateQuantity('perfume',3, 1)">+</button>
+
+
+            </div>
+
+
+
+
+
+            <div class="col-12 col-md-4 col-sm-6 col-lg-3  my-3 p-4">
+
+                <img src="https://lilit.co.il/media/catalog/product/cache/b39fb8251ba699bf3f4c24530a481f62/8/0/8011003993819_1.jpg"
+                    width="250" height="200" alt="">
+
+
+                <h5 class="product">
+                    בושם ורסצ'ה לאשה
+                </h5>
+                <h4>
+                    ₪299
+                </h4>
+
+
+
+                <button onclick="updateQuantity('perfume',4, -1)">-</button>
+                <span id="quantity4">0</span>
+                <button onclick="updateQuantity('perfume',4, 1)">+</button>
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="col-12 col-md-4 col-sm-6 col-lg-3  my-3 p-4">
+
+                <img src="https://d3m9l0v76dty0.cloudfront.net/system/photos/12908427/large/982834ffa79178f7e8cd9aa33d89a53b.jpg"
+                    width="250" height="200" alt="">
+
+
+
+
+                <h5 class="product">
+                    בושם גברים Sauvage Dior EDP 100 מ”ל דיור
+                </h5>
+                <h4>
+                    ₪499
+                </h4>
+
+
+
+
+
+                <button onclick="updateQuantity('perfume',5, -1)">-</button>
+                <span id="quantity5">0</span>
+                <button onclick="updateQuantity('perfume',5, 1)">+</button>
+            </div>
+
+
+
+
+
+
+
+            <div class="col-12 col-md-4 col-sm-6 col-lg-3  my-3 p-4">
+
+                <img src="https://lilit.co.il/media/catalog/product/cache/b39fb8251ba699bf3f4c24530a481f62/6/2/6291100130122_1.jpg"
+                    width="250" height="200" alt="">
+
+
+
+
+
+                <h5 class="product">
+                    בושם AL HARAMAIN AMBER OUD GOLD א.ד.פ
+
+                </h5>
+                <h4>
+                    ₪299
+                </h4>
+
+
+
+
+                <button onclick="updateQuantity('perfume',6, -1)">-</button>
+                <span id="quantity6">0</span>
+                <button onclick="updateQuantity('perfume',6, 1)">+</button>
+
+
+
+            </div>
+
+
+
+
+
+
+            <div class="col-12 col-md-4 col-sm-6 col-lg-3  my-3 p-4">
+                <img src="https://www.april.co.il/Media/Uploads/--888066000062.webp" width="250" height="200" alt="">
+
+
+
+                <h5 class="product">
+                    בושם TOM FORD BLACK ORCHID א.ד.פ
+
+                </h5>
+                <h4>
+                    ₪579
+                </h4>
+
+
+
+                <button onclick="updateQuantity('perfume',7, -1)">-</button>
+                <span id="quantity7">0</span>
+                <button onclick="updateQuantity('perfume',7, 1)">+</button>
+            </div>
+
+
+
+
+
+
+            <div class="col-12 col-md-4 col-sm-6 col-lg-3  my-3 p-4">
+
+                <img src="https://superpharmstorage.blob.core.windows.net/hybris/products/desktop/medium/3700550218210.jpg"
+                    width="250" height="200" alt="">
+
+
+
+                <h5 class="product"> BY Kilia Woman In Gold א.ד.פ לאשה</h5>
+                <h4>
+                    ₪999
+                </h4>
+
+
+
+                <button onclick="updateQuantity('perfume',8, -1)">-</button>
+                <span id="quantity8">0</span>
+                <button onclick="updateQuantity('perfume',8, 1)">+</button>
+            </div>
+
+
+
+
+
+            <div class="col-12 col-md-4 col-sm-6 col-lg-3  my-3 p-4">
+
+                <img src="https://superpharmstorage.blob.core.windows.net/hybris/products/desktop/medium/3346130013457.jpg"
+                    width="250" height="200" alt="">
+
+
+
+                <h5 class="product">
+                    HERMES TERE D א.ד.ט לגבר
+                </h5>
+                <h4>
+                    ₪790
+                </h4>
+
+
+
+
+
+                <button onclick="updateQuantity('perfume',9, -1)">-</button>
+                <span id="quantity9">0</span>
+                <button onclick="updateQuantity('perfume',9, 1)">+</button>
+            </div>
+
+
+
+
+
+
+            <div class="col-12 col-md-4 col-sm-6 col-lg-3  my-3 p-4">
+
+                <img src="https://superpharmstorage.blob.core.windows.net/hybris/products/desktop/medium/3760310290023.jpg"
+                    width="250" height="200" alt="">
+
+
+
+                <h5 class="product">
+                    KAJAL HOMME II א.ד.פ לגבר
+                </h5>
+                <h4>
+                    ₪699
+                </h4>
+
+
+
+
+
+
+                <button onclick="updateQuantity('perfume',10, -1)">-</button>
+                <span id="quantity10">0</span>
+                <button onclick="updateQuantity('perfume',10, 1)">+</button>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="col-12 col-md-4 col-sm-6 col-lg-3  my-3 p-4">
+
+                <img src="https://www.callperfume.co.il/Media/Uploads/191-4736_gentlemem-only-givenchy_Custom(1).jpg"
+                    width="250" height="200" alt="">
+
+
+
+                <h5 class="product">
+
+                    Gentlemen Only Givenchy edt Men </h5>
+                <h4>
+                    ₪269
+                </h4>
+
+
+
+
+                <button onclick="updateQuantity('perfume',11, -1)">-</button>
+                <span id="quantity11">0</span>
+                <button onclick="updateQuantity('perfume',11, 1)">+</button>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+    <h1>סכום הקנייה הכולל:<span id="total">0</span></h1>
+
+
+    <hr />
+    <footer>
+
+
+
+        <h2 class="right2">מידע</h2>
+
+        <br>
+        <br>
+        <a id="link1" href="http://127.0.0.1:3000/project.html">דף הבית</a>
+        <br>
+        <a id="link1" href="http://127.0.0.1:3000/aboutUs.html">אודותינו</a>
+        <br>
+        <a id="link1" href="http://127.0.0.1:3000/customerService.html">שירות לקוחות</a>
+        <br>
+
+        <a id="link1" href="http://127.0.0.1:3000/creams.html">טיפוח</a>
+        <br>
+        <a id="link1" href="http://127.0.0.1:3000/perfume.html">בשמים</a>
+        <br>
+        <a id="link1" href="http://127.0.0.1:3000/boxes.html">מארזים</a>
+        <br>
+
+
+        </div>
+        <br>
+        <br>
+
+    </footer>
+
+</body>
+
+
+</html>
